@@ -5,7 +5,7 @@
 def sum array
   # YOUR CODE HERE
     total = 0
-  if array.length == 1
+  if array.length == 0
     return 0
   else
     array.each do|number|
