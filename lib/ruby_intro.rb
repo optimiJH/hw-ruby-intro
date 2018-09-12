@@ -2,8 +2,17 @@
 
 # Part 1
 
-def sum arr
+def sum array
   # YOUR CODE HERE
+    total = 0
+  if array.length == 1
+    return 0
+  else
+    array.each do|number|
+      total = total + number
+    end
+    return total
+  end
 end
 
 def max_2_sum arr
