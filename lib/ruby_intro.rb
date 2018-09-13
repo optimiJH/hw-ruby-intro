@@ -33,7 +33,6 @@ def max_2_sum arr
   end
 end  
 
-
 def sum_to_n? arr, n
   if arr.length == 0 or arr.length == 1
     return false
@@ -41,12 +40,14 @@ def sum_to_n? arr, n
     arr.each do|number1|
     newArray =arr - [number1]
     newArray.each do |number2|
+    
       if number1 + number2 ==n
         return true      
       end
     end
-    return false
+    
   end
+  return false
   end
 end
 
